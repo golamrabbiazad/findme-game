@@ -1,5 +1,5 @@
 // define all variables for game
-var words, word, answerArray, remainLetters, guess, guesses;
+var words, word, answerArray, remainLetters, guess, guesses, play_btn, reset_btn;
 
 // Create an array of words
 words = ['javascript', 'python', 'rust', 'go', 'swift'];
@@ -8,7 +8,11 @@ word = words[Math.floor(Math.random() * words.length)];
 
 // Set up the answer array
 answerArray = [];
-document.querySelector('.result').addEventListener('click', function () {
+// define a variable & store query value
+play_btn = document.querySelector('.play-btn');
+
+// click event for play button
+play_btn.addEventListener('click', function () {
   for (var i = 0; i < word.length; i++) {
     answerArray[i] = '?';
   }
@@ -47,3 +51,4 @@ document.querySelector('.result').addEventListener('click', function () {
     alert('Aww! The answer was ' + word);
   }
 });
+

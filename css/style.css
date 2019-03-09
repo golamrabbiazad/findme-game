@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,9 +13,9 @@ body {
 section h1 {
   font-family: Calibri,"Lato", sans-serif;
   color: #fff;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 50px;
-  font-size: 2.5rem;
 }
 
 section h1::after {
@@ -24,41 +26,48 @@ section h1::after {
   border-bottom: 2px solid #fff;
 }
 
-section h3 {
-  font-family: 'Montserrat', sans-serif;
-  background-color: tomato;
-  text-align: center;
-  padding: 10px;
-  margin: 50px auto;
-  width: 100px;
-}
-
-section h3:hover {
-  color: #fff;
-  cursor: pointer;
-  background-color: #b34532;
-}
-
 section p {
-  color: #fff;
-  font-size: 1.5em;
   font-family: Calibri, 'Lato', sans-serif;
   text-align: center;
-  margin: 30px 0;
+  color: #fff;
+  font-size: 1.5em;
   font-weight: 500;
-}
-
-section .hint {
-  color: #000;
-  padding-top: 50px;
+  margin: 30px 0;
 }
 
 section .half-area {
   background-color: #fff;
-  display: block;
+  width: 90%;
   max-width: 650px;
   height: 500px;
   border-radius: 5px;
   margin: 0 auto;
+  text-align: center;
+}
+
+section .half-area .play-btn, section .half-area .reload-btn {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  background-color: tomato;
+  display: inline-block;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px;
+  margin: 50px 10px;
+}
+
+section .half-area .play-btn:hover, section .half-area .reload-btn:hover {
+  background-color: #b34532;
+  color: #fff;
+  cursor: pointer;
+}
+
+section .half-area .reload-btn a:hover {
+  color: #fff;
+}
+
+section .half-area .hint {
+  color: #000;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
